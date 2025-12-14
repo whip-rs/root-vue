@@ -1,0 +1,25 @@
+:root {
+
+	/* THEME */
+	color-scheme: light dark;
+	
+	/* TRANSITION GLOBAL */
+	--transition-global: .3s;
+
+	/* BASE MEASURE */
+	--rem-size: 16px;
+
+	/* WRAPPER GUTTER */
+	--wrapper: 1366px;
+	--gt-min: .5rem;
+	--gt-val: .75rem;
+	--gt-max: 1rem;
+
+	/* COLORS */
+
+	/* DERIVED COLORS */
+
+}
+
+/* TRANSITION GLOBAL */
+* { transition: var(--transition-global); }

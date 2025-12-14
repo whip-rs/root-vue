@@ -1,0 +1,55 @@
+/* FLEX */
+.flex {display: flex;}
+.flex.col {flex-direction: column;}
+.flex.row {flex-direction: row;}
+.flex.wrap {flex-wrap: wrap;}
+.flex.grow {flex: 1;}
+
+/* CENTERING */
+.cc {
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	align-items: center
+}
+/* GRID */
+	/* ? */
+
+
+/* TEXT CLAMPING */
+.clamp-1, .clamp-2, .clamp-3 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
+.clamp-1 {-webkit-line-clamp: 1;}
+.clamp-2 {-webkit-line-clamp: 2;}
+.clamp-3 {-webkit-line-clamp: 3;}
+
+/* POSITION */
+.relative {position: relative}
+.absolute {position: absolute}
+
+/* BASE UX DISABLES – DRAG, SELECTION, POINTER EVENTS */
+.no-sel {
+	user-select: none}
+.no-drag {
+	-webkit-user-drag: inherit; -webkit-user-select: inherit }
+.no-pointer-events {
+	pointer-events: none}
+.no-cursor {
+	cursor: none}
+.pointer {
+	cursor: pointer}
+
+/* MOBILE/DESKTOP HIDES */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+	.mobile {display: auto !important;}
+	.desktop {display: none !important;}
+	}
+@media screen and (min-width: 768px) {
+	.mobile {display: none !important;}
+	.desktop {display: auto !important;}
+	}
+

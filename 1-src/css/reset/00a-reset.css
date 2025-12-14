@@ -1,0 +1,91 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+	background: none;
+	vertical-align: baseline;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 1;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html, body {
+	font-size: var(--rem-size);
+	tab-size: 3;
+	/* UNCHECKED: */
+	overflow-x: clip;
+}
+
+/* MEDIA DEFAULTS */
+/* Responsive images/videos by default */
+img, picture, video, canvas, svg {
+	height: auto;
+	max-width: 100%;
+	object-fit: cover;
+	/* aspect-ratio: 1 / 1; */
+}
+
+/* FORM ELEMENTS */
+button, input, select, textarea {
+	font: inherit;
+	color: inherit;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	background-color: transparent;
+	cursor: pointer;
+}
+
+/* USER CAN RESIZE TEXT INPUT FIELDS ONLY VERTICALLY */
+textarea { resize: vertical; }
+
+/* LINKS */
+a {
+	text-decoration-skip-ink: auto;
+}
+
+/* SEPRATOR */
+hr {
+	width: 100%;
+	display: block;
+	height: 1px;
+	}
+
+/* ISOLATION – Create a new stacking context for the app root */
+#app {
+	isolation: isolate;
+}
+
+/* LISTS */
+ul, ol {
+	list-style: revert;
+	margin: revert;
+	padding: revert;
+}
+
+/* GENERIC UTILS */
+[hidden] {
+	display: none !important;
+}
+
+[disabled] {
+	cursor: not-allowed;
+}
+
+/* POTENTIALLY OBSOLETE */
+
+/* OLD LIST DEFAULTS */
+/* ul {
+	list-style-type: disc;
+	margin-left: 0.75rem;
+	padding-left: 0.75rem;
+} */

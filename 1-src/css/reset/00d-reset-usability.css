@@ -1,0 +1,34 @@
+/* OUTLINE – MAKE VISIBLE FOR KEYBOARD, INVISIBLE FOR MOUSE */
+:focus-visible {
+	outline: 2px solid currentColor;
+	/* outline-offset: 4px; */
+}
+
+/* DISABLE SELECT+DRAG */
+nav ul li,
+img,
+picture,
+video,
+canvas,
+svg,
+button,
+.no-drag {
+	user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+}
+
+/* REDUCED MOTION – Respect user operating system preferences for motion*/
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+		}
+	}
+
+/* ## ——— OTHER ——— ## */
+
+/* KILL ALL FOCUS OUTLINE */
+/* *:focus { outline: none; } */

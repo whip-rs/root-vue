@@ -1,0 +1,28 @@
+html, body {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+image, picture, video, canvas, svg, .ico, .icon {
+	image-rendering: -webkit-optimize-contrast;
+}
+
+button, input, select, textarea {
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+/* Truncation helpers for WebKit (line-clamp) */
+input, select, label, .dropdown, .form-group .dropdown {
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	line-clamp: 1;
+	overflow: hidden;
+}
+
+.modal, .modal .contents {
+	-webkit-overflow-scrolling: touch;
+}

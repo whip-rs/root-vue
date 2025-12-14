@@ -1,0 +1,12 @@
+/* TYPOGRAPHY & LAYOUT */
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+	text-wrap: balance;
+	}
+
+p {
+	word-break: normal;
+	white-space: normal;
+	text-wrap: pretty;
+	hyphens: auto;
+	}

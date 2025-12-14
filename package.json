@@ -1,0 +1,31 @@
+{
+  "name": "vue-root-template",
+  "private": true,
+  "version": "1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open --host --config 0-cfg/vite.config.ts",
+    "build": "vue-tsc -b 0-cfg/tsconfig.app.json --noEmit && vite build --config 0-cfg/vite.config.ts",
+    "preview": "vite preview --config 0-cfg/vite.config.ts",
+    "prepare": "node 0-cfg/scripts/setup-workspace.js"
+  },
+  "dependencies": {
+    "pinia": "^3.0.4",
+    "pug": "^3.0.3",
+    "unplugin-vue-components": "^30.0.0",
+    "vue": "^3.5.24",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "@vueuse/core": "^14.1.0",
+    "typescript": "~5.9.3",
+    "unplugin-auto-import": "^20.3.0",
+    "unplugin-fonts": "^1.4.0",
+    "vite": "^7.2.4",
+    "vite-svg-loader": "^5.1.0",
+    "vue-tsc": "^3.1.4"
+  }
+}

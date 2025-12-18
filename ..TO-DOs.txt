@@ -1,0 +1,4 @@
+rename & rewire:
+	- '0-cfg' to 'cfg'
+	- '1-src' to 'src'
+	- '2-dist' to 'dist'
